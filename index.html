@@ -25,19 +25,21 @@
       margin: 20px 0;
     }
 
-    .colorful-button span {
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff6b6b;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin: 0 10px;
       display: inline-block;
       font-weight: bold;
-      font-size: 1.2em;
-      margin: 0 1px;
+      transition: background-color 0.3s;
     }
-    .colorful-button span:nth-child(1) { color: #e63946; }
-    .colorful-button span:nth-child(2) { color: #f1a208; }
-    .colorful-button span:nth-child(3) { color: #f6d743; }
-    .colorful-button span:nth-child(4) { color: #90be6d; }
-    .colorful-button span:nth-child(5) { color: #43aa8b; }
-    .colorful-button span:nth-child(6) { color: #577590; }
-    .colorful-button span:nth-child(7) { color: #9b5de5; }
+
+    nav a:hover {
+      background-color: #ff8787;
+    }
 
     .gallery {
       display: flex;
@@ -68,9 +70,9 @@
   </header>
 
   <nav>
-    <a href="#" class="colorful-button">
-      <span>H</span><span>i</span><span>s</span><span>t</span><span>ó</span><span>r</span><span>i</span><span>a</span><span>s</span>
-    </a>
+    <a href="#">Histórias</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
   </nav>
 
   <div class="gallery">
@@ -86,7 +88,7 @@
     <p>Feito com carinho por Erica 🧵</p>
   </footer>
 
-  <!-- Chat visível (Tawk.to) -->
+  <!-- Chat visível do Tawk.to -->
   <script type="text/javascript">
   var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
   (function () {
