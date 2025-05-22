@@ -1,118 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Feltroverso</title>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #ffe6f0;
-      font-family: 'Comic Neue', cursive, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background-color: #fff8f0;
+    }
+
+    .pagina-revista {
+      display: grid;
+      grid-template-rows: auto 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .quadro {
+      background-color: #ffffff;
+      border: 2px dashed #ffcad4;
+      padding: 10px;
+      box-shadow: 4px 4px 0px #ffd6da;
+      border-radius: 8px;
       text-align: center;
     }
 
-    header {
-      width: 100%;
-      max-height: 180px;
-      overflow: hidden;
-    }
-
-    header img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .buttons {
-      margin-top: 20px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 8px;
-      padding: 10px 20px;
-      border-radius: 20px;
-      background: linear-gradient(90deg, #ff9aa2, #fad0c4);
-      color: white;
-      text-decoration: none;
+    .quadro.titulo {
+      grid-column: span 3;
+      font-size: 32px;
       font-weight: bold;
-      transition: transform 0.2s;
+      color: #ff6b81;
+      position: relative;
     }
 
-    .buttons a:hover {
-      transform: scale(1.05);
+    .botoes {
+      position: absolute;
+      top: 10px;
+      right: 10px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px;
+    .botoes a {
+      margin: 0 5px;
+      text-decoration: none;
+      background-color: #ffd6da;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 14px;
     }
 
-    .card {
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 16px;
+    .quadro img {
+      max-width: 100%;
+      border-radius: 6px;
     }
 
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    @media (max-width: 600px) {
-      .grid {
-        padding: 20px;
-        gap: 10px;
-      }
-
-      .buttons a {
-        padding: 8px 16px;
-        font-size: 14px;
-      }
+    .fala {
+      margin-top: 8px;
+      font-size: 14px;
+      font-style: italic;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/titulo.png" alt="Feltroverso">
-  </header>
 
-  <div class="buttons">
-    <a href="cap1.html">Capítulo 1</a>
-    <a href="cap2.html">Capítulo 2</a>
-    <a href="cap3.html">Capítulo 3</a>
-    <a href="cap4.html">Capítulo 4</a>
+  <div class="pagina-revista">
+    <!-- Quadro 1: Título -->
+    <div class="quadro titulo">
+      Feltroverso
+      <div class="botoes">
+        <a href="#historia">História</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#blog">Blog</a>
+        <a href="#casinha">Casinha Mágica</a>
+      </div>
+    </div>
+
+    <!-- Quadro 2 -->
+    <div class="quadro">
+      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem1.jpg" alt="Cyrus falando">
+      <div class="fala">"Seja bem-vinde ao nosso mundo de feltro."</div>
+    </div>
+
+    <!-- Quadro 3 -->
+    <div class="quadro">
+      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem2.jpg" alt="Ariel curiosa">
+      <div class="fala">"Você pode explorar cada cantinho mágico."</div>
+    </div>
+
+    <!-- Quadro 4 -->
+    <div class="quadro">
+      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem3.jpg" alt="Terrozinho pensativo">
+      <div class="fala">"Aqui também falamos sobre emoções reais."</div>
+    </div>
+
+    <!-- Quadro 5 -->
+    <div class="quadro">
+      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem4.jpg" alt="Sereno nadando">
+      <div class="fala">"Mesmo no caos, a gente encontra poesia."</div>
+    </div>
+
+    <!-- Quadro 6 -->
+    <div class="quadro">
+      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem5.jpg" alt="Cena geral">
+      <div class="fala">"Clique nos botões lá em cima para explorar."</div>
+    </div>
   </div>
 
-  <div class="grid">
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/img1.jpg" alt="Imagem 1">
-    </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/img2.jpg" alt="Imagem 2">
-    </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/img3.jpg" alt="Imagem 3">
-    </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/img4.jpg" alt="Imagem 4">
-    </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/img5.jpg" alt="Imagem 5">
-    </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/img6.jpg" alt="Imagem 6">
-    </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/img7.jpg" alt="Imagem 7">
-    </div>
-  </div>
 </body>
 </html>
