@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feltroverso - Capa da Revista</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fffaf5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe4ec;
+    }
+    header img {
+      width: 300px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
+      background-color: #fff0f5;
+    }
+    nav a {
+      background-color: #ffddee;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffc4e1;
+    }
+    .quadrinhos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+      padding: 30px;
+    }
+    .quadro {
+      background-color: #fdf6f9;
+      border: 2px dashed #f8b6d2;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+    .quadro img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .quadro a.botao-chat {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #ff99c8;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="TITULO_DA_REVISTA.jpg" alt="Título da Revista Feltroverso">
+  </header>
+
+  <nav>
+    <a href="#historia">História</a>
+    <a href="#biografia">Biografia</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#revistinhas">Revistinhas</a>
+    <a href="#arteterapia">Arte-Terapia</a>
+    <a href="#educacao">Educação Emocional</a>
+    <a href="#blog">Blog</a>
+    <a href="#livros">Livros</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#casinha">Casinha Mágica</a>
+    <a href="#conte">Conte sua história</a>
+    <a href="#redes">Redes Sociais</a>
+  </nav>
+
+  <section class="quadrinhos">
+    <div class="quadro"><img src="quadro1.jpg" alt="Quadrinho 1"></div>
+    <div class="quadro"><img src="quadro2.jpg" alt="Quadrinho 2"></div>
+    <div class="quadro"><img src="quadro3.jpg" alt="Quadrinho 3"></div>
+    <div class="quadro"><img src="quadro4.jpg" alt="Quadrinho 4"></div>
+    <div class="quadro"><img src="quadro5.jpg" alt="Quadrinho 5"></div>
+    <div class="quadro">
+      <img src="quadro6_chat.jpg" alt="Fale com o Cyrus">
+      <a class="botao-chat" href="https://wa.me/SEUNUMERO" target="_blank">Fale com o Gato Terapeuta</a>
+    </div>
+  </section>
+</body>
+</html>
