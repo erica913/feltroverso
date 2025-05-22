@@ -1,100 +1,123 @@
+
+Dito por si:
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Feltroverso</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feltroverso - Capa da Revista</title>
   <style>
     body {
-      background-color: #ffe6f0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fffaf5;
       margin: 0;
       padding: 0;
+    }
+    header {
       text-align: center;
+      padding: 20px;
+      background-color: #ffe4ec;
     }
-
     header img {
-      width: 90%;
-      max-width: 600px;
-      margin-top: 20px;
+      width: 300px;
     }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px;
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
+      background-color: #fff0f5;
     }
-
-    .card {
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 16px;
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    .buttons {
-      margin-top: 20px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 8px;
-      padding: 10px 20px;
+    nav a {
+      background-color: #ffddee;
+      color: #333;
+      padding: 10px 15px;
       border-radius: 20px;
-      background: linear-gradient(90deg, #ff9aa2, #fad0c4);
-      color: white;
       text-decoration: none;
       font-weight: bold;
-      transition: transform 0.2s;
+      transition: all 0.3s;
     }
-
-    .buttons a:hover {
-      transform: scale(1.05);
+    nav a:hover {
+      background-color: #ffc4e1;
+    }
+    .quadrinhos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+      padding: 30px;
+    }
+    .quadro {
+      background-color: #fdf6f9;
+      border: 2px dashed #f8b6d2;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+    .quadro img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .quadro a.botao-chat {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #ff99c8;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/titulo.png" alt="Feltroverso">
+    <!-- Imagem de Título -->
+    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/titulo.png" alt="Título da Revista Feltroverso">
   </header>
 
-  <div class="buttons">
-    <a href="#">Capítulo 1</a>
-    <a href="#">Capítulo 2</a>
-    <a href="#">Capítulo 3</a>
-    <a href="#">Capítulo 4</a>
-  </div>
+  <nav>
+    <a href="#historia">História</a>
+    <a href="#biografia">Biografia</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#revistinhas">Revistinhas</a>
+    <a href="#arteterapia">Arte-Terapia</a>
+    <a href="#educacao">Educação Emocional</a>
+    <a href="#blog">Blog</a>
+    <a href="#livros">Livros</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#casinha">Casinha Mágica</a>
+    <a href="#conte">Conte sua história</a>
+    <a href="#redes">Redes Sociais</a>
+  </nav>
 
-  <div class="grid">
-    <div class="card"><img src="img1.jpg" alt="Imagem 1"></div>
-    <div class="card"><img src="img2.jpg" alt="Imagem 2"></div>
-    <div class="card"><img src="img3.jpg" alt="Imagem 3"></div>
-    <div class="card"><img src="img4.jpg" alt="Imagem 4"></div>
-    <div class="card"><img src="img5.jpg" alt="Imagem 5"></div>
-    <div class="card"><img src="img6.jpg" alt="Imagem 6"></div>
-    <div class="card"><img src="img7.jpg" alt="Imagem 7"></div>
-  </div>
+  <section class="quadrinhos">
+    <!-- Quadros: substitua SRC pelos links raw de cada imagem -->
+    <div class="quadro">
+      <img src="{{LINK_RAW_QUADRO1}}" alt="Quadrinho 1">
+    </div>
+    <div class="quadro">
+      <img src="{{LINK_RAW_QUADRO2}}" alt="Quadrinho 2">
+    </div>
+    <div class="quadro">
+      <img src="{{LINK_RAW_QUADRO3}}" alt="Quadrinho 3">
+    </div>
+    <div class="quadro">
+      <img src="{{LINK_RAW_QUADRO4}}" alt="Quadrinho 4">
+    </div>
+    <div class="quadro">
+      <img src="{{LINK_RAW_QUADRO5}}" alt="Quadrinho 5">
+    </div>
+    <div class="quadro">
+      <img src="{{LINK_RAW_QUADRO6}}" alt="Fale com o Cyrus">
+      <a class="botao-chat" href="https://wa.me/SEUNUMERO" target="_blank">Fale com o Gato Terapeuta</a>
+    </div>
+  </section>
+</body>
+</section>
 
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/682f7dde582daa37f9d9174d/1irso7b76';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
+<!-- Balão de Chat Fofinho -->
+<script src="https://cdn.popupsmart.com/bundle.js" data-id="87299" async defer></script>
 
 </body>
 </html>
