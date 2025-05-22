@@ -2,113 +2,102 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Feltroverso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feltroverso - Capa da Revista</title>
   <style>
     body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fffaf5;
       margin: 0;
-      font-family: 'Comic Sans MS', cursive;
-      background-color: #fff8f0;
+      padding: 0;
     }
-
-    .pagina-revista {
-      display: grid;
-      grid-template-rows: auto 1fr 1fr;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+    header {
+      text-align: center;
       padding: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+      background-color: #ffe4ec;
     }
-
+    header img {
+      width: 300px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
+      background-color: #fff0f5;
+    }
+    nav a {
+      background-color: #ffddee;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffc4e1;
+    }
+    .quadrinhos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+      padding: 30px;
+    }
     .quadro {
-      background-color: #ffffff;
-      border: 2px dashed #ffcad4;
+      background-color: #fdf6f9;
+      border: 2px dashed #f8b6d2;
+      border-radius: 15px;
       padding: 10px;
-      box-shadow: 4px 4px 0px #ffd6da;
-      border-radius: 8px;
       text-align: center;
     }
-
-    .quadro.titulo {
-      grid-column: span 3;
-      font-size: 32px;
-      font-weight: bold;
-      color: #ff6b81;
-      position: relative;
-    }
-
-    .botoes {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-
-    .botoes a {
-      margin: 0 5px;
-      text-decoration: none;
-      background-color: #ffd6da;
-      color: #333;
-      padding: 5px 10px;
-      border-radius: 6px;
-      font-size: 14px;
-    }
-
     .quadro img {
-      max-width: 100%;
-      border-radius: 6px;
+      width: 100%;
+      border-radius: 10px;
     }
-
-    .fala {
-      margin-top: 8px;
-      font-size: 14px;
-      font-style: italic;
+    .quadro a.botao-chat {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #ff99c8;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="TITULO_DA_REVISTA.jpg" alt="Título da Revista Feltroverso">
+  </header>
 
-  <div class="pagina-revista">
-    <!-- Quadro 1: Título -->
-    <div class="quadro titulo">
-      Feltroverso
-      <div class="botoes">
-        <a href="#historia">História</a>
-        <a href="#personagens">Personagens</a>
-        <a href="#blog">Blog</a>
-        <a href="#casinha">Casinha Mágica</a>
-      </div>
-    </div>
+  <nav>
+    <a href="#historia">História</a>
+    <a href="#biografia">Biografia</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#revistinhas">Revistinhas</a>
+    <a href="#arteterapia">Arte-Terapia</a>
+    <a href="#educacao">Educação Emocional</a>
+    <a href="#blog">Blog</a>
+    <a href="#livros">Livros</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#casinha">Casinha Mágica</a>
+    <a href="#conte">Conte sua história</a>
+    <a href="#redes">Redes Sociais</a>
+  </nav>
 
-    <!-- Quadro 2 -->
+  <section class="quadrinhos">
+    <div class="quadro"><img src="Hoje eu ouvi uma história que tocou fundo o meu coração...png" alt="Quadrinho 1"></div>
+    <div class="quadro"><img src="ariel.png" alt="Quadrinho 2"></div>
+    <div class="quadro"><img src="quadro3.jpg" alt="Quadrinho 3"></div>
+    <div class="quadro"><img src="quadro4.jpg" alt="Quadrinho 4"></div>
+    <div class="quadro"><img src="quadro5.jpg" alt="Quadrinho 5"></div>
     <div class="quadro">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem1.jpg" alt="Cyrus falando">
-      <div class="fala">"Seja bem-vinde ao nosso mundo de feltro."</div>
+      <img src="quadro6_chat.jpg" alt="Fale com o Cyrus">
+      <a class="botao-chat" href="https://wa.me/SEUNUMERO" target="_blank">Fale com o Gato Terapeuta</a>
     </div>
-
-    <!-- Quadro 3 -->
-    <div class="quadro">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem2.jpg" alt="Ariel curiosa">
-      <div class="fala">"Você pode explorar cada cantinho mágico."</div>
-    </div>
-
-    <!-- Quadro 4 -->
-    <div class="quadro">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem3.jpg" alt="Terrozinho pensativo">
-      <div class="fala">"Aqui também falamos sobre emoções reais."</div>
-    </div>
-
-    <!-- Quadro 5 -->
-    <div class="quadro">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem4.jpg" alt="Sereno nadando">
-      <div class="fala">"Mesmo no caos, a gente encontra poesia."</div>
-    </div>
-
-    <!-- Quadro 6 -->
-    <div class="quadro">
-      <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/imagem5.jpg" alt="Cena geral">
-      <div class="fala">"Clique nos botões lá em cima para explorar."</div>
-    </div>
-  </div>
-
+  </section>
 </body>
 </html>
