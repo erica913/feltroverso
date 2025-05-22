@@ -58,3 +58,44 @@
     }
 
     .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        padding: 20px;
+        gap: 10px;
+      }
+
+      .buttons a {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/titulo.png" alt="Feltroverso">
+  </header>
+
+  <div class="buttons">
+    <a href="#">Capítulo 1</a>
+    <a href="#">Capítulo 2</a>
+    <a href="#">Capítulo 3</a>
+    <a href="#">Capítulo 4</a>
+  </div>
+
+  <div class="grid">
+    <div class="card"><img src="img1.jpg" alt="Imagem 1"></div>
+    <div class="card"><img src="img2.jpg" alt="Imagem 2"></div>
+    <div class="card"><img src="img3.jpg" alt="Imagem 3"></div>
+    <div class="card"><img src="img4.jpg" alt="Imagem 4"></div>
+    <div class="card"><img src="img5.jpg" alt="Imagem 5"></div>
+    <div class="card"><img src="img6.jpg" alt="Imagem 6"></div>
+    <div class="card"><img src="img7.jpg" alt="Imagem 7"></div>
+  </div>
+</body>
+</html>
