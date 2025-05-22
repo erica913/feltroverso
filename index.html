@@ -6,101 +6,95 @@
   <title>Feltroverso</title>
   <style>
     body {
+      background-color: #ffe6f0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-color: #fff6f9;
       margin: 0;
       padding: 0;
       text-align: center;
     }
 
     header img {
-      max-width: 600px;
       width: 90%;
-      height: auto;
-      margin: 30px auto 10px;
-      display: block;
+      max-width: 600px;
+      margin-top: 20px;
     }
 
-    nav {
-      margin: 20px 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      background-color: #ff6b6b;
-      padding: 10px 20px;
-      border-radius: 30px;
-      margin: 0 10px;
-      display: inline-block;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #ff8787;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      padding: 20px;
+      padding: 40px;
     }
 
-    .gallery img {
-      width: 280px;
-      max-width: 90%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 16px;
     }
 
-    footer {
-      margin: 40px 0 80px;
-      font-size: 0.9em;
-      color: #555;
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: linear-gradient(90deg, #ff9aa2, #fad0c4);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    .buttons a:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/titulo.png" alt="Feltroverso - uma coleção de histórias que entendem, abraçam e não julgam" />
+    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/titulo.png" alt="Feltroverso">
   </header>
 
-  <nav>
-    <a href="#">Histórias</a>
-    <a href="#">Sobre</a>
-    <a href="#">Contato</a>
-  </nav>
-
-  <div class="gallery">
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/1quadro.png" alt="Hoje eu ouvi uma história que tocou fundo o meu coração..." />
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/2quadro.png" alt="Ariel" />
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/3quadro.png" alt="Terrozinho" />
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/durga.png" alt="Durga" />
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/file_000000005c2c61f8afb300fcc3531106.png" alt="Quadrinho extra" />
-    <img src="https://raw.githubusercontent.com/erica913/feltroverso/main/cyrus_quadro.png" alt="Oi, quer conversar comigo?" />
+  <div class="buttons">
+    <a href="#">Capítulo 1</a>
+    <a href="#">Capítulo 2</a>
+    <a href="#">Capítulo 3</a>
+    <a href="#">Capítulo 4</a>
   </div>
 
-  <footer>
-    <p>Feito com carinho por Erica 🧵</p>
-  </footer>
+  <div class="grid">
+    <div class="card"><img src="img1.jpg" alt="Imagem 1"></div>
+    <div class="card"><img src="img2.jpg" alt="Imagem 2"></div>
+    <div class="card"><img src="img3.jpg" alt="Imagem 3"></div>
+    <div class="card"><img src="img4.jpg" alt="Imagem 4"></div>
+    <div class="card"><img src="img5.jpg" alt="Imagem 5"></div>
+    <div class="card"><img src="img6.jpg" alt="Imagem 6"></div>
+    <div class="card"><img src="img7.jpg" alt="Imagem 7"></div>
+  </div>
 
-  <!-- Chat visível do Tawk.to -->
+  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function () {
-      var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/682f7dde582daa37f9d9174d/1irso7b76';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-  })();
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/682f7dde582daa37f9d9174d/1irso7b76';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
   </script>
+  <!--End of Tawk.to Script-->
 
 </body>
 </html>
