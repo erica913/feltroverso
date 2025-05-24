@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Feltroverso</title>
   <style>
     body {
       margin: 0;
-      background: url('FELTROVERSO_IMAGE_CORRETA.jpg') no-repeat center center fixed;
+      padding: 0;
+      background: url('file-EburaCARZwGeypecWcMQ3W') no-repeat center center fixed;
       background-size: cover;
-      font-family: sans-serif;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
     }
-    .button {
+    .links {
       position: absolute;
-      padding: 10px 20px;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 90%;
     }
-    .button a {
+    .links a {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px 20px;
+      border-radius: 12px;
       text-decoration: none;
-      color: transparent;
-      display: block;
-      width: 100%;
-      height: 100%;
+      color: #5b3710;
+      font-weight: bold;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+    .links a:hover {
+      background-color: rgba(255, 230, 180, 0.9);
     }
   </style>
 </head>
 <body>
 
-  <!-- Botões invisíveis sobre a imagem -->
-  <div class="button" style="top: 40px; left: 100px; width: 80px; height: 30px;"><a href="#inicio">Início</a></div>
-  <div class="button" style="top: 40px; left: 200px; width: 90px; height: 30px;"><a href="#historias">Histórias</a></div>
-  <div class="button" style="top: 40px; left: 310px; width: 110px; height: 30px;"><a href="#personagens">Personagens</a></div>
-  <div class="button" style="top: 40px; left: 440px; width: 90px; height: 30px;"><a href="#contato">Contato</a></div>
-
-  <div class="button" style="top: 180px; left: 100px; width: 100px; height: 30px;"><a href="#biografia">Biografia</a></div>
-  <div class="button" style="top: 180px; left: 220px; width: 120px; height: 30px;"><a href="#arteterapia">Arteterapia</a></div>
-  <div class="button" style="top: 180px; left: 370px; width: 180px; height: 30px;"><a href="#educacao-emocional">Educação emocional</a></div>
-
-  <div class="button" style="top: 230px; left: 100px; width: 180px; height: 30px;"><a href="#historias-curtinhas">Histórias curtinhas</a></div>
-  <div class="button" style="top: 230px; left: 300px; width: 90px; height: 30px;"><a href="#videos">Vídeos</a></div>
-  <div class="button" style="top: 230px; left: 400px; width: 80px; height: 30px;"><a href="#blog">Blog</a></div>
-  <div class="button" style="top: 230px; left: 490px; width: 160px; height: 30px;"><a href="#conte-sua-historia">Conte sua história</a></div>
-  <div class="button" style="top: 280px; left: 100px; width: 150px; height: 30px;"><a href="#redes-sociais">Redes sociais</a></div>
-  <div class="button" style="top: 280px; left: 270px; width: 80px; height: 30px;"><a href="#chat">Chat</a></div>
+  <div class="links">
+    <a href="#inicio">Início</a>
+    <a href="#historias">Histórias</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#contato">Contato</a>
+    <a href="#biografia">Biografia</a>
+    <a href="#arteterapia">Arteterapia</a>
+    <a href="#educacao">Educação emocional</a>
+    <a href="#curtinhas">Histórias curtinhas</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#blog1">Blog</a>
+    <a href="#blog2">Blog</a>
+  </div>
 
 </body>
 </html>
