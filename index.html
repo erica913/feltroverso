@@ -2,91 +2,47 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de HQ</title>
+  <title>Feltroverso</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
     body {
       margin: 0;
-      padding: 20px;
-      background: #ffec99;
-      font-family: 'Bangers', cursive;
+      background: url('FELTROVERSO_IMAGE_CORRETA.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
     }
-
-    .comic-page {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      gap: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+    .button {
+      position: absolute;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
     }
-
-    .panel {
-      position: relative;
-      background: white;
-      border: 5px solid black;
-      overflow: hidden;
-      box-shadow: 4px 4px 0 #000;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    .panel img {
-      width: 100%;
-      height: auto;
+    .button a {
+      text-decoration: none;
+      color: transparent;
       display: block;
-    }
-
-    .speech-bubble {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      max-width: 80%;
-      background: #fff;
-      border: 3px solid black;
-      border-radius: 15px;
-      padding: 10px;
-      font-size: 1.2rem;
-      box-shadow: 3px 3px 0 #000;
-    }
-
-    .speech-bubble::after {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      left: 20px;
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 15px solid white;
-      filter: drop-shadow(2px 2px 0 black);
-    }
-
-    @media (max-width: 768px) {
-      .comic-page {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
-      }
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="comic-page">
-    <div class="panel">
-      <img src="https://via.placeholder.com/400x300" alt="Quadro 1">
-      <div class="speech-bubble">Olá! Bem-vindo à nossa história.</div>
-    </div>
-    <div class="panel">
-      <img src="https://via.placeholder.com/400x300" alt="Quadro 2">
-      <div class="speech-bubble">Algo incrível está para acontecer...</div>
-    </div>
-    <div class="panel">
-      <img src="https://via.placeholder.com/400x300" alt="Quadro 3">
-      <div class="speech-bubble">Olhe ali!</div>
-    </div>
-    <div class="panel">
-      <img src="https://via.placeholder.com/400x300" alt="Quadro 4
+
+  <!-- Botões invisíveis sobre a imagem -->
+  <div class="button" style="top: 40px; left: 100px; width: 80px; height: 30px;"><a href="#inicio">Início</a></div>
+  <div class="button" style="top: 40px; left: 200px; width: 90px; height: 30px;"><a href="#historias">Histórias</a></div>
+  <div class="button" style="top: 40px; left: 310px; width: 110px; height: 30px;"><a href="#personagens">Personagens</a></div>
+  <div class="button" style="top: 40px; left: 440px; width: 90px; height: 30px;"><a href="#contato">Contato</a></div>
+
+  <div class="button" style="top: 180px; left: 100px; width: 100px; height: 30px;"><a href="#biografia">Biografia</a></div>
+  <div class="button" style="top: 180px; left: 220px; width: 120px; height: 30px;"><a href="#arteterapia">Arteterapia</a></div>
+  <div class="button" style="top: 180px; left: 370px; width: 180px; height: 30px;"><a href="#educacao-emocional">Educação emocional</a></div>
+  <div class="button" style="top: 230px; left: 100px; width: 180px; height: 30px;"><a href="#historias-curtinhas">Histórias curtinhas</a></div>
+  <div class="button" style="top: 230px; left: 300px; width: 90px; height: 30px;"><a href="#videos">Vídeos</a></div>
+  <div class="button" style="top: 230px; left: 400px; width: 80px; height: 30px;"><a href="#blog">Blog</a></div>
+  <div class="button" style="top: 230px; left: 490px; width: 160px; height: 30px;"><a href="#conte-sua-historia">Conte sua história</a></div>
+  <div class="button" style="top: 280px; left: 100px; width: 150px; height: 30px;"><a href="#redes-sociais">Redes sociais</a></div>
+  <div class="button" style="top: 280px; left: 270px; width: 80px; height: 30px;"><a href="#chat">Chat</a></div>
+
+</body>
+</html>
