@@ -6,54 +6,32 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: url('https://erica913.github.io/feltroverso/1.png') no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
     }
-
-    .links {
-      position: absolute;
-      top: 15%;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      max-width: 90%;
-    }
-
-    .links a {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 10px 18px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #3b2a1a;
-      font-weight: bold;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    }
-
-    .links a:hover {
-      background-color: rgba(255, 220, 180, 0.9);
+    .feltro-img {
+      display: block;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
+  <img src="feltroverso-home.png" usemap="#mapa-feltro" alt="Feltroverso" class="feltro-img">
 
-  <div class="links">
-    <a href="#inicio">Início</a>
-    <a href="#historias">Histórias</a>
-    <a href="#personagens">Personagens</a>
-    <a href="#contato">Contato</a>
-    <a href="#biografia">Biografia</a>
-    <a href="#arteterapia">Arteterapia</a>
-    <a href="#educacao-emocional">Educação emocional</a>
-    <a href="#curtinhas">Histórias curtinhas</a>
-    <a href="#videos">Vídeos</a>
-    <a href="#blog1">Blog</a>
-    <a href="#blog2">Blog</a>
-  </div>
-
+  <map name="mapa-feltro">
+    <area shape="rect" coords="135,60,235,110" href="index.html" alt="Início">
+    <area shape="rect" coords="250,60,350,110" href="historias.html" alt="Histórias">
+    <area shape="rect" coords="365,60,485,110" href="personagens.html" alt="Personagens">
+    <area shape="rect" coords="500,60,600,110" href="contato.html" alt="Contato">
+    
+    <area shape="rect" coords="150,200,270,250" href="biografia.html" alt="Biografia">
+    <area shape="rect" coords="280,200,400,250" href="arteterapia.html" alt="Arteterapia">
+    <area shape="rect" coords="410,200,570,250" href="educacao-emocional.html" alt="Educação Emocional">
+    
+    <area shape="rect" coords="110,270,290,320" href="curtinhas.html" alt="Histórias Curtinhas">
+    <area shape="rect" coords="300,270,400,320" href="videos.html" alt="Vídeos">
+    <area shape="rect" coords="410,270,510,320" href="blog.html" alt="Blog">
+  </map>
 </body>
 </html>
